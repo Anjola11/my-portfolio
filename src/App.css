@@ -1,0 +1,34 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding-top: 70px; /* Height of navbar */
+}
+
+/* Page Container */
+.page-container {
+  min-height: calc(100vh - 70px);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px; /* Smaller navbar height on mobile */
+  }
+  
+  .page-container {
+    min-height: calc(100vh - 60px);
+    padding: var(--spacing-sm);
+  }
+}
