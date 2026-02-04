@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navigation/Navbar'
 import DirectoryPanel from './components/Navigation/DirectoryPanel'
+import PageNavigation from './components/Navigation/PageNavigation'
 import SystemDiagnostic from './components/Loading/SystemDiagnostic'
 import Identification from './components/Pages/Identification'
 import ProjectLogs from './components/Pages/ProjectLogs'
 import Instrumentation from './components/Pages/Instrumentation'
 import SignalPath from './components/Pages/SignalPath'
+import Education from './components/Pages/Education'
 import './App.css'
 
 function AnimatedRoutes() {
@@ -20,6 +22,7 @@ function AnimatedRoutes() {
         <Route path="/projects" element={<ProjectLogs />} />
         <Route path="/instrumentation" element={<Instrumentation />} />
         <Route path="/contact" element={<SignalPath />} />
+        <Route path="/education" element={<Education />} />
       </Routes>
     </AnimatePresence>
   )

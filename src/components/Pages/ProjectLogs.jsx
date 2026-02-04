@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import ProjectCard from '../ProjectEntry/ProjectCard'
 import './ProjectLogs.css'
+import PageNavigation from '../Navigation/PageNavigation'
 
 const pageVariants = {
   initial: { x: '100%', opacity: 0 },
@@ -33,12 +34,11 @@ const projects = [
     verified: true,
     summary: 'Secure, decentralized voting architecture implementing cryptographic vote validation, real-time result aggregation, and role-based access control for electoral management.',
     specs: {
-      repository: 'https://github.com/yourusername/dvota',
-      deployment: 'https://dvota-demo.com',
+      repository: 'https://github.com/Anjola11/dvota',
+      deployment: 'https://dvota.vercel.app',
       accessLevel: 'PUBLIC',
-      demoCredentials: { username: 'admin', password: 'demo123' },
       techStack: 'Python, FastAPI, SQL',
-      completionDate: '2024-Q4'
+      completionDate: '2026-Q1'
     }
   },
   {
@@ -51,14 +51,14 @@ const projects = [
     verified: true,
     summary: 'Comprehensive business management platform featuring inventory tracking, transaction processing, customer relationship management, and real time analytics for print shop operations.',
     specs: {
-      repository: 'https://github.com/yourusername/kennyfasa',
-      deployment: 'https://kennyfasa-demo.com',
+      repository: 'https://github.com/Anjola11/kennyfasa_bk_backend',
+      deployment: 'Coming Soon',
       accessLevel: 'PUBLIC',
       adminFeatures: 'Inventory, Orders, Analytics',
       businessLogic: 'Transaction processing, Stock management',
       techStack: 'Python, FastAPI, React, PostgreSQL',
-      completionDate: '2025-Q1',
-      videoDemo: 'https://youtube.com/watch?v=demo'
+      completionDate: '2026-Q1',
+      videoDemo: 'Coming Soon'
     }
   },
   {
@@ -97,7 +97,8 @@ export default function ProjectLogs() {
         ))}
       </div>
 
-      <div className="page-indicator">PAGE 01 / 03</div>
+      <div className="page-indicator">PAGE 01 / 05</div>
+      <PageNavigation />
     </motion.div>
   )
 }

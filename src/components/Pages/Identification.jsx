@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import './Identification.css'
+import PageNavigation from '../Navigation/PageNavigation'
 
 const pageVariants = {
   initial: { x: '100%', opacity: 0 },
@@ -30,12 +31,6 @@ export default function Identification() {
       animate="animate"
       exit="exit"
     >
-      <div className="hire-badge">
-        <div className="badge-star">★</div>
-        <div className="badge-text">HIRE</div>
-        <div className="badge-subtext">AVAILABLE</div>
-      </div>
-
       <div className="identification-content">
         <div className="name-stamp">
           <h1>AANU ALADENIYI</h1>
@@ -66,7 +61,8 @@ export default function Identification() {
         </div>
       </div>
 
-      <div className="page-indicator">PAGE 00 / 03</div>
+      <div className="page-indicator">PAGE 00 / 05</div>
+      <PageNavigation />
     </motion.div>
   )
 }

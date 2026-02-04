@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import './Instrumentation.css'
+import PageNavigation from '../Navigation/PageNavigation'
 
 const pageVariants = {
   initial: { x: '100%', opacity: 0 },
@@ -108,7 +109,8 @@ export default function Instrumentation() {
         ))}
       </div>
 
-      <div className="page-indicator">PAGE 02 / 03</div>
+      <div className="page-indicator">PAGE 02 / 05</div>
+      <PageNavigation />
     </motion.div>
   )
 }

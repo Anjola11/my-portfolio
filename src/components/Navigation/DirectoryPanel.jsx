@@ -32,6 +32,13 @@ const menuItems = [
       { label: 'Professional Networks', path: '/contact' },
       { label: 'Direct Contact', path: '/contact' }
     ]
+  },
+  {
+    section: '04_EDUCATION',
+    items: [
+      { label: 'Academic Credentials', path: '/education' },
+      { label: 'Current Progress', path: '/education' }
+    ]
   }
 ]
 

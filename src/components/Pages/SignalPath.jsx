@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import './SignalPath.css'
+import PageNavigation from '../Navigation/PageNavigation'
 
 const pageVariants = {
   initial: { x: '100%', opacity: 0 },
@@ -26,21 +27,21 @@ const channels = [
     id: 1,
     name: 'GITHUB',
     type: 'Source Repository',
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/Anjola11',
     status: 'Active'
   },
   {
     id: 2,
     name: 'LINKEDIN',
     type: 'Professional Network',
-    url: 'https://linkedin.com/in/yourprofile',
-    status: 'Active'
+    url: '#',
+    status: 'Coming Soon'
   },
   {
     id: 3,
     name: 'EMAIL',
     type: 'Direct Communication',
-    url: 'mailto:your.email@example.com',
+    url: 'mailto:aladeniyiaanu@gmail.com',
     status: 'Active',
     extra: 'RESPONSE_TIME: <24hrs'
   }
@@ -108,7 +109,8 @@ export default function SignalPath() {
         ))}
       </div>
 
-      <div className="page-indicator">PAGE 03 / 03</div>
+      <div className="page-indicator">PAGE 03 / 05</div>
+      <PageNavigation />
     </motion.div>
   )
 }

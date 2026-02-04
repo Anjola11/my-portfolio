@@ -110,4 +110,26 @@
   .channel-card {
     padding: var(--spacing-md);
   }
+  
+  .channel-header {
+    font-size: 14px;
+  }
+  
+  .channel-row {
+    gap: var(--spacing-xs);
+  }
+  
+  .info-key {
+    min-width: 70px;
+    font-size: 10px;
+  }
+  
+  .info-value {
+    font-size: 11px;
+  }
+  
+  .connection-button {
+    font-size: 11px;
+    padding: 10px;
+  }
 }
