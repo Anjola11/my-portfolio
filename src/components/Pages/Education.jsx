@@ -63,16 +63,16 @@ export default function Education() {
             </div>
             <div className="detail-row">
               <span className="detail-key">FOCUS AREAS:</span>
-              <span className="detail-value">Software Engineering, Systems Architecture, Backend Development</span>
+              <span className="detail-value">Software Engineering, Embedded Systems, Systems Architecture, Backend Development</span>
             </div>
           </div>
 
           <div className="progress-section">
             <div className="progress-label">ACADEMIC PROGRESSION</div>
             <div className="progress-bar">
-              <div className="progress-fill" style={{ width: '40%' }}></div>
+              <div className="progress-fill" style={{ width: '60%' }}></div>
             </div>
-            <div className="progress-text">Year 2 of 5 (40% Complete)</div>
+            <div className="progress-text">Year 3 of 5 (60% Complete)</div>
           </div>
         </div>
       </div>
